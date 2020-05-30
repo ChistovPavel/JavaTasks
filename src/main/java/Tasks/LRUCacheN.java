@@ -38,6 +38,7 @@ public class LRUCacheN
             if (map.containsKey(key))
             {
                 map.remove(key);
+                map.put(key, value);
             }
         }
         map.put(key, value);
